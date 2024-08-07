@@ -1,41 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2024-08-07T13:27:37 WEST" name="Default suite" finished-at="2024-08-07T13:28:13 WEST" duration-ms="36503">
-    <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
-    </groups>
-    <test started-at="2024-08-07T13:27:37 WEST" name="Default test" finished-at="2024-08-07T13:28:13 WEST" duration-ms="36503">
-      <class name="TestRunner.cucumberTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]" started-at="2024-08-07T13:27:37 WEST" name="setUpClass" finished-at="2024-08-07T13:27:37 WEST" duration-ms="561" status="PASS">
-          <params>
-            <param index="0">
-              <value>
+	<reporter-output>
+	</reporter-output>
+	<suite started-at="2024-08-07T13:27:37 WEST" name="Default suite"
+		finished-at="2024-08-07T13:28:13 WEST" duration-ms="36503">
+		<groups>
+			<group name="cucumber">
+				<method
+					signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]"
+					name="runScenario"
+					class="io.cucumber.testng.AbstractTestNGCucumberTests" />
+			</group> <!--
+			cucumber -->
+		</groups>
+		<test started-at="2024-08-07T13:27:37 WEST" name="Default test"
+			finished-at="2024-08-07T13:28:13 WEST" duration-ms="36503">
+			<class name="TestRunner.cucumberTestRunner">
+				<test-method is-config="true"
+					signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]"
+					started-at="2024-08-07T13:27:37 WEST" name="setUpClass"
+					finished-at="2024-08-07T13:27:37 WEST" duration-ms="561"
+					status="PASS">
+					<params>
+						<param index="0">
+							<value>
                 <![CDATA[org.testng.TestRunner@4337afd]]>
               </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]" started-at="2024-08-07T13:27:37 WEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-07T13:27:47 WEST" duration-ms="9945" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
+						</param>
+					</params>
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!--
+				setUpClass -->
+				<test-method
+					signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]"
+					started-at="2024-08-07T13:27:37 WEST" name="runScenario"
+					description="Runs Cucumber Scenarios"
+					data-provider="scenarios"
+					finished-at="2024-08-07T13:27:47 WEST" duration-ms="9945"
+					status="FAIL">
+					<params>
+						<param index="0">
+							<value>
                 <![CDATA[": check login is successful with valid credentials"]]>
               </value>
-            </param>
-            <param index="1">
-              <value>
+						</param>
+						<param index="1">
+							<value>
                 <![CDATA["checkout"]]>
               </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
+						</param>
+					</params>
+					<exception
+						class="org.openqa.selenium.NoSuchElementException">
+						<message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='app_logo']"}
   (Session info: chrome=127.0.6533.89)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
@@ -46,7 +64,7 @@ Command: [a3ecf1b4cb910db0e2a6259385d54dd3, findElement {using=xpath, value=//di
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56860}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56860/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: a3ecf1b4cb910db0e2a6259385d54dd3]]>
             </message>
-            <full-stacktrace>
+						<full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='app_logo']"}
   (Session info: chrome=127.0.6533.89)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
@@ -76,25 +94,34 @@ at StepDefinitions.LoginStepsDefinition.user_is_nagivated_to_home_page(LoginStep
 at ✽.user is nagivated to home page(file:///C:/Users/Dell/eclipse-workspace/mavensample/src/test/resources/Features/checkout.feature:9)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]" started-at="2024-08-07T13:27:47 WEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-07T13:27:50 WEST" duration-ms="3050" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
+					</exception> <!--
+					org.openqa.selenium.NoSuchElementException -->
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!--
+				runScenario -->
+				<test-method
+					signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]"
+					started-at="2024-08-07T13:27:47 WEST" name="runScenario"
+					description="Runs Cucumber Scenarios"
+					data-provider="scenarios"
+					finished-at="2024-08-07T13:27:50 WEST" duration-ms="3050"
+					status="FAIL">
+					<params>
+						<param index="0">
+							<value>
                 <![CDATA[": check login is successful with valid credentials"]]>
               </value>
-            </param>
-            <param index="1">
-              <value>
+						</param>
+						<param index="1">
+							<value>
                 <![CDATA["checkout"]]>
               </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
+						</param>
+					</params>
+					<exception
+						class="org.openqa.selenium.NoSuchElementException">
+						<message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='app_logo']"}
   (Session info: chrome=127.0.6533.89)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
@@ -105,7 +132,7 @@ Command: [048b7747ab0660d1234b1ce9b300d1a8, findElement {using=xpath, value=//di
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56908}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56908/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 048b7747ab0660d1234b1ce9b300d1a8]]>
             </message>
-            <full-stacktrace>
+						<full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='app_logo']"}
   (Session info: chrome=127.0.6533.89)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
@@ -135,25 +162,34 @@ at StepDefinitions.LoginStepsDefinition.user_is_nagivated_to_home_page(LoginStep
 at ✽.user is nagivated to home page(file:///C:/Users/Dell/eclipse-workspace/mavensample/src/test/resources/Features/checkout.feature:9)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]" started-at="2024-08-07T13:27:50 WEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-07T13:27:54 WEST" duration-ms="3467" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
+					</exception> <!--
+					org.openqa.selenium.NoSuchElementException -->
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!--
+				runScenario -->
+				<test-method
+					signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]"
+					started-at="2024-08-07T13:27:50 WEST" name="runScenario"
+					description="Runs Cucumber Scenarios"
+					data-provider="scenarios"
+					finished-at="2024-08-07T13:27:54 WEST" duration-ms="3467"
+					status="FAIL">
+					<params>
+						<param index="0">
+							<value>
                 <![CDATA["checkout is successful"]]>
               </value>
-            </param>
-            <param index="1">
-              <value>
+						</param>
+						<param index="1">
+							<value>
                 <![CDATA["checkout"]]>
               </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
+						</param>
+					</params>
+					<exception
+						class="org.openqa.selenium.NoSuchElementException">
+						<message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-backpack']"}
   (Session info: chrome=127.0.6533.89)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
@@ -164,7 +200,7 @@ Command: [2ad55ebfbc7362940b03757590402a42, findElement {using=xpath, value=//bu
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56995/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 2ad55ebfbc7362940b03757590402a42]]>
             </message>
-            <full-stacktrace>
+						<full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-backpack']"}
   (Session info: chrome=127.0.6533.89)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
@@ -194,63 +230,94 @@ at StepDefinitions.Checkout.user_add_one_or_lot_of_products(Checkout.java:34)
 at ✽.user add one or lot of products(file:///C:/Users/Dell/eclipse-workspace/mavensample/src/test/resources/Features/checkout.feature:18)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]" started-at="2024-08-07T13:27:54 WEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-07T13:27:57 WEST" duration-ms="3170" status="PASS">
-          <params>
-            <param index="0">
-              <value>
+					</exception> <!--
+					org.openqa.selenium.NoSuchElementException -->
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!--
+				runScenario -->
+				<test-method
+					signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]"
+					started-at="2024-08-07T13:27:54 WEST" name="runScenario"
+					description="Runs Cucumber Scenarios"
+					data-provider="scenarios"
+					finished-at="2024-08-07T13:27:57 WEST" duration-ms="3170"
+					status="PASS">
+					<params>
+						<param index="0">
+							<value>
                 <![CDATA["check login is successful with valid credentials"]]>
               </value>
-            </param>
-            <param index="1">
-              <value>
+						</param>
+						<param index="1">
+							<value>
                 <![CDATA["Login page automation"]]>
               </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]" started-at="2024-08-07T13:27:57 WEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-07T13:28:02 WEST" duration-ms="4927" status="PASS">
-          <params>
-            <param index="0">
-              <value>
+						</param>
+					</params>
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!--
+				runScenario -->
+				<test-method
+					signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]"
+					started-at="2024-08-07T13:27:57 WEST" name="runScenario"
+					description="Runs Cucumber Scenarios"
+					data-provider="scenarios"
+					finished-at="2024-08-07T13:28:02 WEST" duration-ms="4927"
+					status="PASS">
+					<params>
+						<param index="0">
+							<value>
                 <![CDATA["check login is successful with valid credentials"]]>
               </value>
-            </param>
-            <param index="1">
-              <value>
+						</param>
+						<param index="1">
+							<value>
                 <![CDATA["select product"]]>
               </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]" started-at="2024-08-07T13:28:02 WEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-07T13:28:13 WEST" duration-ms="11276" status="PASS">
-          <params>
-            <param index="0">
-              <value>
+						</param>
+					</params>
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!--
+				runScenario -->
+				<test-method
+					signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]"
+					started-at="2024-08-07T13:28:02 WEST" name="runScenario"
+					description="Runs Cucumber Scenarios"
+					data-provider="scenarios"
+					finished-at="2024-08-07T13:28:13 WEST" duration-ms="11276"
+					status="PASS">
+					<params>
+						<param index="0">
+							<value>
                 <![CDATA["check add to cart is successful after login"]]>
               </value>
-            </param>
-            <param index="1">
-              <value>
+						</param>
+						<param index="1">
+							<value>
                 <![CDATA["select product"]]>
               </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]" started-at="2024-08-07T13:28:13 WEST" name="tearDownClass" finished-at="2024-08-07T13:28:13 WEST" duration-ms="24" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- TestRunner.cucumberTestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+						</param>
+					</params>
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!--
+				runScenario -->
+				<test-method is-config="true"
+					signature="tearDownClass()[pri:0, instance:TestRunner.cucumberTestRunner@6ab778a]"
+					started-at="2024-08-07T13:28:13 WEST" name="tearDownClass"
+					finished-at="2024-08-07T13:28:13 WEST" duration-ms="24"
+					status="PASS">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!--
+				tearDownClass -->
+			</class> <!--
+			TestRunner.cucumberTestRunner -->
+		</test> <!--
+		Default test -->
+	</suite> <!--
+	Default suite -->
 </testng-results>
